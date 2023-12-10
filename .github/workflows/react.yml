@@ -72,7 +72,7 @@ jobs:
       - name: Set up Git identity
         run: |
           git config --global user.email "ajay90211@gmail.com"
-          git config --global user.name "Ajay"
+          git config --global user.name "ajaykrshah"
           
       # Step 7: Deploy the React app
       - name: Deploy React app
