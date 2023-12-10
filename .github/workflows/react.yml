@@ -24,6 +24,9 @@ jobs:
   # Job to build the React app
   build:
     runs-on: ubuntu-latest
+    outputs:
+      package-manager: ${{ steps.detect-package-manager.outputs.package-manager }}
+    
     steps:
       # Step 1: Checkout the repository code
       - name: Checkout
@@ -48,6 +51,7 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+          echo "::set-output name=package-manager::npm"
 
       # Step 3: Setup Node.js environment with Node version 14
       - name: Setup Node.js
@@ -93,6 +97,6 @@ jobs:
       # Step 9: Deploy the built React app to GitHub Pages using a specific action
       - name: Deploy to GitHub Pages
         id: deployment
-        run: ${{ steps.detect-package-manager.outputs.runner }} run deploy
+        run: ${{ needs.build.outputs.package-manager }} run deploy
 
 
