@@ -68,7 +68,13 @@ jobs:
       - name: Build React app
         run: ${{ steps.detect-package-manager.outputs.runner }} run build
 
-      # Step 5: Deploy the React app
+      # Step 6: Set up Git identity
+      - name: Set up Git identity
+        run: |
+          git config --global user.email "ajay90211@gmail.com"
+          git config --global user.name "Ajay"
+          
+      # Step 7: Deploy the React app
       - name: Deploy React app
         run: ${{ steps.detect-package-manager.outputs.runner }} run deploy
 
