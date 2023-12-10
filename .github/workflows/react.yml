@@ -94,5 +94,5 @@ jobs:
         id: deployment
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: release
+          branch: gh_pages
           folder: build
