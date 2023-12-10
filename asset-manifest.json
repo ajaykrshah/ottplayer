@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ottplayer/static/css/main.adae84ed.chunk.css",
+    "main.js": "/ottplayer/static/js/main.d9fd3c53.chunk.js",
+    "main.js.map": "/ottplayer/static/js/main.d9fd3c53.chunk.js.map",
+    "runtime-main.js": "/ottplayer/static/js/runtime-main.35ff4988.js",
+    "runtime-main.js.map": "/ottplayer/static/js/runtime-main.35ff4988.js.map",
+    "static/js/2.a1e483d1.chunk.js": "/ottplayer/static/js/2.a1e483d1.chunk.js",
+    "static/js/2.a1e483d1.chunk.js.map": "/ottplayer/static/js/2.a1e483d1.chunk.js.map",
+    "index.html": "/ottplayer/index.html",
+    "static/css/main.adae84ed.chunk.css.map": "/ottplayer/static/css/main.adae84ed.chunk.css.map",
+    "static/js/2.a1e483d1.chunk.js.LICENSE.txt": "/ottplayer/static/js/2.a1e483d1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35ff4988.js",
+    "static/js/2.a1e483d1.chunk.js",
+    "static/css/main.adae84ed.chunk.css",
+    "static/js/main.d9fd3c53.chunk.js"
+  ]
+}
