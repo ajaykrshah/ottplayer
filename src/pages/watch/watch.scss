@@ -1,0 +1,38 @@
+.watch {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  .video-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .custom-video {
+      width: 95vw;
+      height: 95vh;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .back {
+      position: absolute;
+      top: 20px;
+      left: 50px;
+      cursor: pointer;
+      color: white;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      font-size: 16px;
+
+      svg {
+        font-size: 24px; /* Adjust icon size */
+        margin-right: 8px; /* Provide spacing between icon and text */
+      }
+    }
+  }
+}
