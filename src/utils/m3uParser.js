@@ -8,7 +8,7 @@ const parseM3UData = (data) => {
         const info = line.match(/#EXTINF:(-?\d+)(?:\s+tvg-chno="([^"]*)")?(?:\s+tvg-name="([^"]*)")?(?:\s+tvg-logo="([^"]*)")?(?:\s+tvg-language="([^"]*)")?(?:\s+tvg-type="([^"]*)")?(?:\s+group-title="([^"]*)")?.*,(.*)/);
   
         if (info && info.length >= 9) {
-          const [, number, tvgChno, tvgName, tvgLogo, tvgLanguage, tvgType, groupTitle, name] = info;
+          const [, , tvgChno, , tvgLogo, tvgLanguage, tvgType, groupTitle, name] = info;
   
           const logoUrl = tvgLogo || '';
           const language = tvgLanguage || '';
