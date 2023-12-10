@@ -93,7 +93,6 @@ jobs:
       # Step 9: Deploy the built React app to GitHub Pages using a specific action
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: gh_pages
-          folder: build
+        uses: actions/deploy-pages@v3
+
+
