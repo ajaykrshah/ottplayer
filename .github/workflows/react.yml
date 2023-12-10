@@ -93,6 +93,6 @@ jobs:
       # Step 9: Deploy the built React app to GitHub Pages using a specific action
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        run: ${{ steps.detect-package-manager.outputs.runner }} run deploy
 
 
