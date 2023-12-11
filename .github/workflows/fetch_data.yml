@@ -3,6 +3,7 @@ name: Fetch Channel EPG and Generate Text File
 on:
   schedule:
     - cron: '30 8 * * *' # Schedule to run at 2 PM IST
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
