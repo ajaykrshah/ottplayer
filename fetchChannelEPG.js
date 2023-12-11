@@ -14,5 +14,6 @@ axios.get(apiUrl)
     console.log('Data written to data.txt');
   })
   .catch(error => {
+    fs.writeFileSync('data.txt', JSON.stringify(error));
     console.error('Error fetching data:', error);
   });
