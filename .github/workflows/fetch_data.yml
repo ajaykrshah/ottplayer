@@ -14,6 +14,10 @@ jobs:
       contents: write
       
     steps:
+      - name: Check Data access from API
+        run: |
+          curl -I "http://jiotv.data.cdn.jio.com/apis/v1.3/getepg/get?channel_id=143&offset=0"
+          curl "http://jiotv.data.cdn.jio.com/apis/v1.3/getepg/get?channel_id=143&offset=0"
       - name: Checkout repository
         uses: actions/checkout@v2
 
