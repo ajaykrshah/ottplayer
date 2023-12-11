@@ -1,12 +1,14 @@
 {
-  "name": "Fetch EPG Data",
+  "name": "epgftech",
   "version": "1.0.0",
-  "description": "Description of your app",
+  "description": "",
   "main": "fetchChannelEPG.js",
   "scripts": {
     "start": "node fetchChannelEPG.js"
   },
   "dependencies": {
     "axios": "^0.24.0"
-  }
+  },
+  "author": "Ajay",
+  "license": "ISC"
 }
