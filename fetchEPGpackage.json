@@ -1,0 +1,12 @@
+{
+  "name": "Fetch EPG Data",
+  "version": "1.0.0",
+  "description": "Description of your app",
+  "main": "fetchChannelEPG.js",
+  "scripts": {
+    "start": "node fetchChannelEPG.js"
+  },
+  "dependencies": {
+    "axios": "^0.24.0" // Or the latest version
+  }
+}
