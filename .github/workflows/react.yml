@@ -4,8 +4,8 @@ name: Deploy React app to Pages
 
 # Triggers the workflow on pushes to the main branch or manual triggering
 on:
-  push:
-    branches: ["main"]
+#  push:
+ #   branches: ["main"]
   workflow_dispatch:
 
 # Define permissions required for GitHub Actions
