@@ -19,7 +19,10 @@ jobs:
           
       - name: Copy package.json to use fetchEPGpackage.json
         run: cp fetchEPGpackage.json package.json
-
+        
+      - name: Copy package.json to use fetchEPGpackage-lock.json
+        run: cp fetchEPGpackage-lock.json package-lock.json
+        
       - name: Install dependencies from fetchEPGpackage.json
         run: npm ci --no-audit --prefer-offline
 
