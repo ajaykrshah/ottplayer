@@ -29,11 +29,12 @@ jobs:
       - name: Run Node.js script
         run: node fetchChannelEPG.js
 
-      - name: Commit data.txt
+      - name: pull latest
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-
-          git add data.txt
-          git commit -m "Add generated data.txt" || echo "No changes to commit"
-          git push
+          git pull
+          
+        # Commit all changed files back to the repository
+      - name: Commit updated data.txt
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automated EPG
