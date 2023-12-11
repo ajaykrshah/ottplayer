@@ -18,7 +18,14 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --package-lock-only
+
+      - name: Copy package.json to use fetchEPGpackage.json
+        run: cp fetchEPGpackage.json package.json
+
+      - name: Install dependencies from fetchEPGpackage.json
+        run: npm ci
 
       - name: Run Node.js script
         run: node fetchChannelEPG.js
+
