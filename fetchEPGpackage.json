@@ -7,6 +7,6 @@
     "start": "node fetchChannelEPG.js"
   },
   "dependencies": {
-    "axios": "^0.24.0" // Or the latest version
+    "axios": "^0.24.0"
   }
 }
