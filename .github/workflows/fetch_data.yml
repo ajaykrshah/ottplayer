@@ -1,0 +1,23 @@
+name: Fetch Channel EPG and Generate Text File
+
+on:
+  schedule:
+    - cron: '30 8 * * *' # Schedule to run at 2 PM IST
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Node.js script
+        run: node fetchChannelEPG.js
