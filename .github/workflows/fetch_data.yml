@@ -7,7 +7,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+      
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -28,7 +33,12 @@ jobs:
 
       - name: Run Node.js script
         run: node fetchChannelEPG.js
-
+        
+      - name: Reset changes (except data.txt)
+        run: |
+          git reset --hard
+          git checkout -- data.txt
+          
       - name: pull latest
         run: |
           git pull
