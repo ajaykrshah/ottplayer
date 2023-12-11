@@ -37,7 +37,7 @@ jobs:
       - name: Reset changes (except data.txt)
         run: |
           git reset --hard
-          git checkout -- data.txt
+          git add data.txt
           
       - name: pull latest
         run: |
