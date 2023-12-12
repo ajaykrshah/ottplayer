@@ -1,0 +1,64 @@
+/* StreamFilter.css */
+
+/* General styles for the filters container */
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--body-bg-light);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the language and genre dropdowns */
+.filters select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px top 50%;
+  background-size: 18px auto;
+  width: 40%; /* Adjust the width as needed */
+  cursor: pointer;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .filters input[type="text"],
+  .filters select {
+    width: calc(100% - 20px); /* Considering margin-right and padding */
+    margin-bottom: 10px;
+  }
+}
+
+.filters input[type="text"],
+.filters select {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid var(--border-color-light);
+  border-radius: 5px;
+}
+
+/* Dark Mode styles */
+.dark-mode .filters {
+  background-color: var(--body-bg-dark);
+}
+
+.dark-mode .filters input[type="text"],
+.dark-mode .filters select {
+  color: var(--border-color-light);
+  background-color: var(--card-bg-dark);
+  border-color: var(--border-color-dark);
+}
+
+.dark-mode .filters select {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+}

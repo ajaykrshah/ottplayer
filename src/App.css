@@ -26,7 +26,6 @@ h1 {
   gap: 20px;
 }
 
-
 .stream-card {
   border: 1px solid;
   padding: 20px;
@@ -65,20 +64,6 @@ h1 {
   color: var(--text-color);
 }
 
-.close-btn {
-  background-color: #f44336;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
 /* Media query for mobile responsiveness */
 @media (max-width: 768px) {
   .streams {
@@ -88,33 +73,4 @@ h1 {
   .stream-card img {
     height: 120px;
   }
-}
-
-/* Toggle switch styles (You can add styles for the toggle switch here if needed) */
-
-/* Filters styles */
-.filters {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.filters input[type="text"],
-.filters select {
-  padding: 8px;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-.filters input[type="text"] {
-  width: 200px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.filters select {
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  cursor: pointer;
 }
