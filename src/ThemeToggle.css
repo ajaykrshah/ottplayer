@@ -1,19 +1,9 @@
 /* ThemeToggle.css */
-.toggle-wrapper {
-  display: flex;
-  align-items: center; /* Align items vertically */
-}
-
-.toggle-container {
-  display: flex;
-  align-items: center; /* Align items vertically */
-  margin-right: 10px; /* Adjust spacing between toggle elements */
-}
 
 /* Toggle container */
-/* .toggle-container {
+.toggle-container {
   display: inline-block;
-} */
+}
 
 /* Hide default checkbox */
 .toggle-checkbox {
@@ -26,10 +16,9 @@
   width: 60px;
   height: 30px;
   border-radius: 15px;
-  background-color: #808183;
+  background-color: #ccc;
   position: relative;
   cursor: pointer;
-  margin-right: 0.5rem;
 }
 
 /* Slider appearance */

@@ -1,7 +1,6 @@
 /* Light mode styles */
 :root {
-  /* --body-bg-light: #f4f4f4; */
-  --body-bg-light: #ccc;;
+  --body-bg-light: #f4f4f4;
   --text-color-light: #292929;
   --card-bg-light: #fff;
   --border-color-light: #ddd;
@@ -31,7 +30,6 @@ body {
 .light-mode {
   background-color: var(--body-bg-light);
   color: var(--text-color-light);
-  min-height: 100vh;
   /* Additional styles specific to light mode if needed */
 }
 
@@ -45,7 +43,6 @@ body {
 .dark-mode {
   background-color: var(--body-bg-dark);
   color: var(--text-color-dark);
-  min-height: 100vh;
   /* Additional styles specific to dark mode if needed */
 }
 
