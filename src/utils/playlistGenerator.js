@@ -2,7 +2,7 @@ const CHANNELS_STORAGE_KEY = "channels";
 const API_URL = "https://jiotv.data.cdn.jio.com/apis/v1.4/getMobileChannelList/get/?os=android&devicetype=phone";
 const USER_AGENT = "plaYtv/7.0.8 (Linux;Android 7.1.2) ExoPlayerLib/2.11.7";
 const CACHE_VALIDITY_PERIOD = 21600000; // 6 hours in milliseconds
-const IMG = "http://jiotv.catchup.cdn.jio.com/dare_images";
+const IMG = "https://jiotv.catchup.cdn.jio.com/dare_images";
 
 export async function fetchChannelsJSON() {
   try {
@@ -120,7 +120,7 @@ export const extractChannelName = async ()=>{
 // Function to fetch EPG data for a channel
 export async function fetchEPGForChannel(channelInfo) {
   // Define API endpoints
-  const API = "http://jiotv.data.cdn.jio.com/apis";
+  const API = "https://jiotv.data.cdn.jio.com/apis";
   const MAX_RETRY = 1;
   const channelData = [];
   const programmes = [];
